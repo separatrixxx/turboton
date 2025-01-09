@@ -1,0 +1,48 @@
+.linksBlock {
+	display: grid;
+
+	width: 100%;
+	gap: 20px;
+	justify-items: center;
+}
+
+.linksText {
+	font-weight: 600;
+}
+
+.linksDiv {
+	display: grid;
+	align-items: center;
+	gap: 10px;
+	grid-template-columns: repeat(8, auto);
+}
+
+.linkIcon {
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.linkIcon:active {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	filter: brightness(0.9);
+}
+
+.linkImage {
+	width: 48px;
+	height: 48px;
+}
+
+@media (min-width: 1024px) {
+	.linkIcon:hover {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		filter: brightness(0.9);
+	}
+}
+
+@media (max-width: 580px) {
+	.linksDiv {
+		grid-template-columns: repeat(4, auto);
+	}
+}

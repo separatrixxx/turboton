@@ -1,0 +1,70 @@
+.button {
+	display: grid;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+
+	cursor: pointer;
+	transition-duration: 300ms;
+
+	border: none;
+
+	border-radius: 5px;
+	border-radius: 16px;
+	background: var(--primary);
+	justify-items: center;
+	grid-template-columns: auto;
+}
+
+.button:active {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	filter: brightness(0.9);
+}
+
+.whiteButton,
+.grayButton {
+	color: var(--black);
+}
+
+.whiteButton {
+	background: var(--white);
+}
+
+.grayButton {
+	background: var(--light);
+}
+
+.iconButton {
+	grid-template-columns: auto 1fr;
+	gap: 10px;
+}
+
+.iconButton > svg {
+	width: 28px;
+	fill: var(--white);
+}
+
+.sizeS {
+	border-radius: 10px;
+}
+
+.text {
+	color: var(--white);
+
+	font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+	.button:hover {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		filter: brightness(0.9);
+	}
+}
+
+@media (max-width: 580px) {
+	.iconButton > svg {
+		width: 24px;
+	}
+}

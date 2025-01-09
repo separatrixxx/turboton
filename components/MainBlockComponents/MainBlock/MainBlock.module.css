@@ -1,0 +1,46 @@
+.mainBlock {
+	display: grid;
+
+	width: 90%;
+	justify-items: center;
+
+	background: var(--white);
+	gap: 40px;
+}
+
+.logoImage {
+	width: 22%;
+	height: fit-content;
+}
+
+.mainText {
+	text-align: center;
+
+	font-weight: 600 !important;
+}
+
+.mainImage {
+	width: 40%;
+	height: fit-content;
+	margin: 20px 0;
+}
+
+@media (max-width: 1024px) {
+	.logoImage {
+		width: 45%;
+	}
+
+	.mainImage {
+		width: 60%;
+	}
+}
+
+@media (max-width: 580px) {
+	.logoImage {
+		width: 76%;
+	}
+
+	.mainImage {
+		width: 100%;
+	}
+}
