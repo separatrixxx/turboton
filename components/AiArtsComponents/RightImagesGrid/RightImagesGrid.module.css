@@ -1,0 +1,34 @@
+.rightImagesGrid {
+	display: grid;
+	gap: 24px;
+
+	height: fit-content;
+}
+
+.rightImagesGrid div {
+	display: grid;
+
+	width: 100%;
+	gap: 24px;
+	grid-template-columns: 1fr 1fr;
+	justify-self: right;
+}
+
+.aiRightImage {
+	width: 100%;
+	height: fit-content;
+
+	border-radius: 44px;
+}
+
+@media (max-width: 1024px) {
+	.aiRightImage {
+		border-radius: 36px;
+	}
+}
+
+@media (max-width: 580px) {
+	.aiRightImage {
+		border-radius: 26px;
+	}
+}

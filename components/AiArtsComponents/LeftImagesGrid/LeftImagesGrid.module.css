@@ -1,0 +1,71 @@
+.leftImagesGrid {
+	position: relative;
+
+	display: grid;
+	overflow: hidden;
+	align-items: end;
+
+	width: 100%;
+	grid-area: leftImagesGrid;
+}
+
+.aiRightImage1 {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+
+	width: fit-content;
+	height: 100%;
+}
+
+.aiRightImage2 {
+	overflow: hidden;
+
+	width: 100%;
+
+	width: 60%;
+	height: fit-content;
+	max-height: 300px;
+
+	border-radius: 44px;
+	justify-self: right;
+	object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+	.aiRightImage2 {
+		max-height: 200px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.aiRightImage1,
+	.aiRightImage2 {
+		border-radius: 36px;
+	}
+
+	.aiRightImage2 {
+		width: 60%;
+	}
+}
+
+@media (max-width: 800px) {
+	.aiRightImage2 {
+		max-height: 150px;
+	}
+}
+
+@media (max-width: 580px) {
+	.aiRightImage1 {
+		position: relative;
+
+		width: 50%;
+
+		border-radius: 26px;
+	}
+
+	.aiRightImage2 {
+		display: none;
+	}
+}

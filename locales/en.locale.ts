@@ -13,4 +13,8 @@ export const en = {
     buy_on_stonfi: "Buy on STON.fi",
     maint_text: "Harnessing the Power of AI-Driven Art",
     official_links: "Official Links",
+    welcome_to_the_fam: "Welcome to the Fam! 🐸 💖",
+    ai_arts: "AI Arts",
+    ai_arts_text: "Choose AI Art you like and post it with your Frens",
+    choose_you_weekly_art: "Choose you Weekly Art",
 };

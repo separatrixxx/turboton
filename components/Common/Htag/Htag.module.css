@@ -19,50 +19,32 @@
 }
 
 .xxl {
-	font-size: 56px;
+	font-size: 50px;
 }
 
 .xl {
-	font-size: 36px;
+	font-size: 30px;
 }
 
 .l {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .m {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .s {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 @media (max-width: 1024px) {
 	.xxl {
-		font-size: 44px;
+		font-size: 40px;
 	}
 
 	.xl {
-		font-size: 28px;
-	}
-
-	.l {
-		font-size: 20px;
-	}
-
-	.m {
-		font-size: 17px;
-	}
-}
-
-@media (max-width: 580px) {
-	.xxl {
-		font-size: 32px;
-	}
-
-	.xl {
-		font-size: 22px;
+		font-size: 24px;
 	}
 
 	.l {
@@ -70,6 +52,24 @@
 	}
 
 	.m {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 580px) {
+	.xxl {
+		font-size: 28px;
+	}
+
+	.xl {
+		font-size: 20px;
+	}
+
+	.l {
 		font-size: 16px;
+	}
+
+	.m {
+		font-size: 14px;
 	}
 }

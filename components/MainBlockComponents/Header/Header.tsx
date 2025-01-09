@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import styles from './Header.module.css';
+import Link from 'next/link';
 import { Htag } from '../../Common/Htag/Htag';
 import { setLocale } from '../../../helpers/locale.helper';
 import { useSetup } from '../../../hooks/useSetup';
