@@ -61,9 +61,12 @@
 }
 
 @media (max-width: 1024px) {
+	.nftBlock {
+		padding: 40px 0 20px 0;
+	}
+
 	.nftDiv {
 		width: 100%;
-		padding: 20px 0;
 		grid-template-columns: auto;
 		gap: 20px;
 	}
@@ -83,7 +86,9 @@
 	.tapeDiv {
 		grid-template-columns: auto;
 
-		height: 244px;
+		height: 248px;
+		gap: 20px;
+		margin-bottom: -10px;
 	}
 }
 
@@ -97,20 +102,23 @@
 }
 
 @media (max-width: 580px) {
+	.nftBlock {
+		padding: 40px 0 0 0;
+	}
+
 	.nftDiv {
 		gap: 0;
-
-		padding: 10px 0;
 	}
 
 	.glow {
-		bottom: -130%;
-		left: -200%;
+		bottom: -140%;
+		left: -160%;
 
 		transform: rotate(-45deg) translateX(50%);
 	}
 
 	.tapeDiv {
-		height: 162px;
+		height: 224px;
+		gap: 12px;
 	}
 }

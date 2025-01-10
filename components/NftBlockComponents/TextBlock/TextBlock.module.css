@@ -36,5 +36,16 @@
 @media (max-width: 1024px) {
 	.textBlock {
 		margin: 40px 0;
+		gap: 10px;
+	}
+
+	.title {
+		margin-bottom: 10px;
+	}
+
+	.buttonsDiv {
+		gap: 12px;
+
+		margin-top: 20px;
 	}
 }

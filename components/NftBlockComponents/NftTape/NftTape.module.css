@@ -156,8 +156,8 @@
 
 @media (max-width: 580px) {
 	.square {
-		width: 75px;
-		height: 75px;
+		width: 100px;
+		height: 100px;
 
 		border-radius: 26px;
 	}
@@ -165,14 +165,10 @@
 	.top .tapeContent,
 	.bottom .tapeContent {
 		gap: 12px;
-
-		margin-bottom: 12px;
 	}
 
 	.left .tapeContent,
 	.right .tapeContent {
 		gap: 12px;
-
-		margin-right: 12px;
 	}
 }
