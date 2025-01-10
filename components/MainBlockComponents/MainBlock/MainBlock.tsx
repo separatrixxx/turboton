@@ -1,6 +1,6 @@
 import styles from './MainBlock.module.css';
 import Image from 'next/image';
-import { Header } from '../Header/Header';
+import { Header } from '../../HeaderComponents/Header/Header';
 import { Htag } from '../../Common/Htag/Htag';
 import { useSetup } from '../../../hooks/useSetup';
 import { setLocale } from '../../../helpers/locale.helper';

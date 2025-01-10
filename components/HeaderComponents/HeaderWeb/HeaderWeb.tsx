@@ -1,4 +1,4 @@
-import styles from './Header.module.css';
+import styles from './HeaderWeb.module.css';
 import Link from 'next/link';
 import { Htag } from '../../Common/Htag/Htag';
 import { setLocale } from '../../../helpers/locale.helper';
@@ -6,7 +6,7 @@ import { useSetup } from '../../../hooks/useSetup';
 import { Button } from '../../Common/Button/Button';
 
 
-export const Header = (): JSX.Element => {
+export const HeaderWeb = (): JSX.Element => {
     const { router } = useSetup();
 
     const link1 = process.env.NEXT_PUBLIC_TT_MEMECOIN;

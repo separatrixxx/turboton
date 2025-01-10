@@ -56,6 +56,12 @@
 	}
 }
 
+@media (max-width: 800px) {
+	.xl {
+		font-size: 22px;
+	}
+}
+
 @media (max-width: 580px) {
 	.xxl {
 		font-size: 28px;

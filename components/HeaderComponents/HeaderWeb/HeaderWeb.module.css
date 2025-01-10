@@ -1,5 +1,6 @@
 .header {
 	display: grid;
+	align-items: center;
 
 	width: 80%;
 	padding: 20px 0;
@@ -8,6 +9,8 @@
 }
 
 .headerLink {
+	display: grid;
+
 	width: fit-content;
 
 	cursor: pointer;
@@ -30,5 +33,17 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 		color: var(--primary);
+	}
+}
+
+@media (max-width: 1400px) {
+	.header {
+		width: 90%;
+	}
+}
+
+@media (max-width: 800px) {
+	.header {
+		display: none;
 	}
 }

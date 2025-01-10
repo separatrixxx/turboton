@@ -5,7 +5,7 @@
 	margin-top: 70px;
 	padding: 80px 20px;
 
-	border-top: 1px solid var(--light);
+	border-top: 1px solid var(--darkLight);
 	justify-items: center;
 	gap: 40px;
 }

@@ -5,7 +5,6 @@
 	overflow: hidden;
 
 	width: 100%;
-	padding-top: 40px;
 
 	background: var(--light);
 	justify-items: center;
@@ -44,6 +43,10 @@
 	justify-self: left;
 }
 
+.nftTextBlock {
+	padding-top: 40px;
+}
+
 @media (max-width: 1400px) {
 	.nftDiv {
 		width: 80%;
@@ -74,6 +77,8 @@
 	.nftTextBlock {
 		width: 90%;
 		justify-self: center;
+
+		padding: 0;
 	}
 
 	.glow {
