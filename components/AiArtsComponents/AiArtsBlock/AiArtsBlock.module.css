@@ -5,6 +5,7 @@
 	justify-items: left;
 	grid-template-columns: calc(60% - 24px) 40%;
 	gap: 24px;
+	padding: 80px 0;
 }
 
 .aiArtsDiv1 {
@@ -48,6 +49,7 @@
 @media (max-width: 1024px) {
 	.aiArtsBlock {
 		width: 90%;
+		padding: 60px 0;
 	}
 
 	.aiArtsButton {
@@ -58,6 +60,8 @@
 @media (max-width: 580px) {
 	.aiArtsBlock {
 		grid-template-columns: auto;
+
+		padding: 40px 0;
 	}
 
 	.aiArtsDiv1 {

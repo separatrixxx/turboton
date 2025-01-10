@@ -28,16 +28,9 @@ export const LinksBlock = (): JSX.Element => {
             <div className={styles.linksDiv}>
                 {linksData.map(link => (
                     link.url && (
-                        <Link 
-                            key={link.id} 
-                            href={link.url} 
-                            className={styles.linkIcon}
-                            target="_blank" 
-                            aria-label={`official link for ${link.id}`}
-                        >
-                            <Image 
-                                className={styles.linkImage} 
-                                draggable='false'
+                        <Link key={link.id} href={link.url} className={styles.linkIcon}
+                            target="_blank" aria-label={`official link for ${link.id}`}>
+                            <Image className={styles.linkImage} draggable='false'
                                 loader={() => `/${link.id}Image.webp`}
                                 src={`/${link.id}Image.webp`}
                                 alt={`${link.id} image`}

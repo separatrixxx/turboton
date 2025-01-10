@@ -2,9 +2,10 @@
 	display: grid;
 
 	width: 90%;
-	justify-items: center;
+	padding-bottom: 80px;
 
 	background: var(--white);
+	justify-items: center;
 	gap: 40px;
 }
 
@@ -26,6 +27,10 @@
 }
 
 @media (max-width: 1024px) {
+	.mainBlock {
+		padding-bottom: 60px;
+	}
+
 	.logoImage {
 		width: 45%;
 	}
@@ -36,6 +41,10 @@
 }
 
 @media (max-width: 580px) {
+	.mainBlock {
+		padding-bottom: 40px;
+	}
+
 	.logoImage {
 		width: 76%;
 	}

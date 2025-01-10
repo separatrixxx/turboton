@@ -1,0 +1,51 @@
+.gameBlock {
+	position: relative;
+
+	display: grid;
+	overflow: hidden;
+
+	width: 100%;
+	padding: 40px 0;
+
+	background: var(--dark);
+	justify-items: center;
+}
+
+.glow {
+	position: absolute;
+	z-index: 0;
+	right: -26%;
+	bottom: 0;
+
+	height: 110%;
+	filter: blur(70px);
+	fill: var(--glow1);
+}
+
+.gameDiv {
+	z-index: 1;
+
+	display: grid;
+	align-items: center;
+
+	width: 70%;
+	justify-items: right;
+	gap: 40px;
+	grid-template-columns: calc(70% - 40px) 30%;
+}
+
+@media (max-width: 1400px) {
+	.gameDiv {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.gameDiv {
+		width: 90%;
+	}
+}
+
+/* @media (max-width: 580px) {
+
+} */

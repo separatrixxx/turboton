@@ -1,0 +1,178 @@
+.nftTape {
+	position: relative;
+
+	display: grid;
+	overflow: hidden;
+
+	width: 100%;
+	height: 100%;
+}
+
+.tape {
+	position: absolute;
+
+	display: flex;
+
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.top,
+.bottom {
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.left,
+.right {
+	flex-direction: row;
+
+	height: 100%;
+}
+
+.top {
+	animation: moveTop var(--animation-duration) linear infinite;
+}
+
+.bottom {
+	animation: moveBottom var(--animation-duration) linear infinite;
+}
+
+.left {
+	animation: moveLeft var(--animation-duration) linear infinite;
+}
+
+.right {
+	animation: moveRight var(--animation-duration) linear infinite;
+}
+
+.tapeContent {
+	height: fit-content;
+}
+
+.top .tapeContent,
+.bottom .tapeContent {
+	display: grid;
+	justify-items: left;
+	gap: 24px;
+
+	margin-bottom: 24px;
+}
+
+.left .tapeContent,
+.right .tapeContent {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+
+	margin-right: 24px;
+}
+
+.square {
+	display: grid;
+	align-items: center;
+	flex-shrink: 0;
+
+	width: 150px;
+	height: 150px;
+
+	border-radius: 44px;
+	background: var(--white);
+	justify-items: center;
+}
+
+.squareImage {
+	object-fit: cover;
+
+	overflow: hidden;
+
+	width: fit-content;
+	height: 70%;
+}
+
+@keyframes moveTop {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-33.333%);
+	}
+}
+
+@keyframes moveBottom {
+	0% {
+		transform: translateY(-33.333%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes moveLeft {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-33.333%);
+	}
+}
+
+@keyframes moveRight {
+	0% {
+		transform: translateX(-33.333%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 1024px) {
+	.square {
+		width: 112px;
+		height: 112px;
+
+		border-radius: 36px;
+	}
+
+	.top .tapeContent,
+	.bottom .tapeContent {
+		gap: 20px;
+
+		margin-bottom: 20px;
+	}
+
+	.left .tapeContent,
+	.right .tapeContent {
+		gap: 20px;
+
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 580px) {
+	.square {
+		width: 75px;
+		height: 75px;
+
+		border-radius: 26px;
+	}
+
+	.top .tapeContent,
+	.bottom .tapeContent {
+		gap: 12px;
+
+		margin-bottom: 12px;
+	}
+
+	.left .tapeContent,
+	.right .tapeContent {
+		gap: 12px;
+
+		margin-right: 12px;
+	}
+}

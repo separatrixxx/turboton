@@ -1,0 +1,116 @@
+.nftBlock {
+	position: relative;
+
+	display: grid;
+	overflow: hidden;
+
+	width: 100%;
+	padding-top: 40px;
+
+	background: var(--light);
+	justify-items: center;
+}
+
+.glow {
+	position: absolute;
+	z-index: 0;
+	right: -26%;
+	bottom: 0;
+
+	height: 110%;
+	filter: blur(70px);
+	fill: var(--glow1);
+}
+
+.nftDiv {
+	z-index: 1;
+
+	display: grid;
+	align-items: center;
+
+	width: 70%;
+	justify-items: right;
+	gap: 120px;
+	grid-template-columns: 324px 1fr;
+}
+
+.tapeDiv {
+	display: grid;
+
+	width: 100%;
+	height: 100%;
+	gap: 24px;
+	grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+	justify-self: left;
+}
+
+@media (max-width: 1400px) {
+	.nftDiv {
+		width: 80%;
+	}
+
+	.glow {
+		right: -50%;
+	}
+}
+
+@media (max-width: 1240px) {
+	.glow {
+		right: -70%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.nftDiv {
+		width: 100%;
+		padding: 20px 0;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+
+	.nftTextBlock {
+		width: 90%;
+		justify-self: center;
+	}
+
+	.glow {
+		bottom: -120%;
+		left: -50%;
+
+		transform: rotate(-45deg) translateX(50%);
+	}
+
+	.tapeDiv {
+		grid-template-columns: auto;
+
+		height: 244px;
+	}
+}
+
+@media (max-width: 800px) {
+	.glow {
+		bottom: -120%;
+		left: -100%;
+
+		transform: rotate(-45deg) translateX(50%);
+	}
+}
+
+@media (max-width: 580px) {
+	.nftDiv {
+		gap: 0;
+
+		padding: 10px 0;
+	}
+
+	.glow {
+		bottom: -130%;
+		left: -200%;
+
+		transform: rotate(-45deg) translateX(50%);
+	}
+
+	.tapeDiv {
+		height: 162px;
+	}
+}
