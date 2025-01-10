@@ -1,0 +1,9 @@
+.animatedImage {
+	transition-duration: 1000ms;
+
+	opacity: 1;
+}
+
+.invisibleImage {
+	opacity: 0;
+}

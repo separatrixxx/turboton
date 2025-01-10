@@ -68,14 +68,14 @@
 }
 
 .gameImage1 {
-	top: 0;
+	top: -15%;
 	left: -10%;
 
 	height: 500px;
 }
 
 .gameImage2 {
-	bottom: 0;
+	bottom: 15%;
 	left: -30%;
 
 	height: 400px;
@@ -101,14 +101,14 @@
 	}
 
 	.gameImage1 {
-		top: 10%;
+		top: -5%;
 		left: 0;
 
 		height: 400px;
 	}
 
 	.gameImage2 {
-		bottom: 5%;
+		bottom: 20%;
 		left: -10%;
 
 		height: 300px;
@@ -121,7 +121,7 @@
 	}
 
 	.gameImage2 {
-		bottom: 10%;
+		bottom: 25%;
 		left: -10%;
 	}
 }
@@ -160,7 +160,7 @@
 	}
 
 	.gameImage1 {
-		top: -10%;
+		top: -25%;
 		left: 0;
 
 		width: 110%;
@@ -168,7 +168,7 @@
 	}
 
 	.gameImage2 {
-		bottom: -5%;
+		bottom: 10%;
 		left: 10%;
 
 		height: 300px;
@@ -215,14 +215,14 @@
 	}
 
 	.gameImage1 {
-		top: 5%;
+		top: -10%;
 		left: -15%;
 
 		width: 150%;
 	}
 
 	.gameImage2 {
-		bottom: 5%;
+		bottom: 20%;
 		left: 10%;
 
 		height: 250px;
@@ -249,14 +249,14 @@
 	}
 
 	.gameImage1 {
-		top: 0;
+		top: -15%;
 		left: -40%;
 
 		width: 200%;
 	}
 
 	.gameImage2 {
-		bottom: 0;
+		bottom: 15%;
 		left: 0;
 
 		height: 250px;

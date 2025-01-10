@@ -1,0 +1,72 @@
+.mainLogo {
+	display: grid;
+	align-items: center;
+
+	width: fit-content;
+	grid-template-columns: auto 1fr;
+	justify-items: center;
+	gap: 24px;
+}
+
+.logo {
+	width: 110px;
+	height: 110px;
+}
+
+.logoTextDiv {
+	display: grid;
+
+	width: 100%;
+	height: fit-content;
+	justify-items: left;
+	gap: 16px;
+	grid-template-rows: auto 1fr;
+}
+
+.logoText1 {
+	width: 90%;
+}
+
+.logoText2 {
+	align-self: end;
+
+	width: 55%;
+}
+
+@media (max-width: 580px) {
+	.logoDiv {
+		grid-template-columns: auto;
+		gap: 16px;
+	}
+
+	.logoTextDiv {
+		height: 80px;
+	}
+}
+
+@media (max-width: 580px) {
+	.logoTextDiv {
+		justify-items: center;
+	}
+
+	.logoText2 {
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 300px) {
+	.logoTextDiv {
+		gap: 0;
+
+		height: 60px;
+	}
+
+	.logoText1 {
+		width: 70%;
+	}
+
+	.logoText2 {
+		width: 45%;
+		margin-top: -1000px;
+	}
+}

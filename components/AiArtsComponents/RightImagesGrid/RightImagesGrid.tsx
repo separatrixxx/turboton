@@ -1,35 +1,18 @@
 import styles from './RightImagesGrid.module.css';
-import Image from 'next/image';
+import { AnimatedImage } from '../AnimatedImage/AnimatedImage';
 
 
 export const RightImagesGrid = (): JSX.Element => {
+    const images1 = Array.from({ length: 6 }, (_, i) => `/AiImage${i + 3}.webp`);
+    const images2 = Array.from({ length: 6 }, (_, i) => `/AiImage${i + 9}.webp`);
+    const images3 = Array.from({ length: 5 }, (_, i) => `/AiImage${i + 15}.webp`);
+
     return (
         <div className={styles.rightImagesGrid}>
-            <Image className={styles.aiRightImage} draggable='false'
-                loader={() => '/AiImage1.webp'}
-                src='/AiImage1.webp'
-                alt={'ai image 1'}
-                width={1}
-                height={1}
-                unoptimized={true}
-            />
+            <AnimatedImage className={styles.aiRightImage} images={images1} alt='ai image 3' />
             <div>
-                <Image className={styles.aiRightImage} draggable='false'
-                    loader={() => '/AiImage2.webp'}
-                    src='/AiImage2.webp'
-                    alt={'ai image 2'}
-                    width={1}
-                    height={1}
-                    unoptimized={true}
-                />
-                <Image className={styles.aiRightImage} draggable='false'
-                    loader={() => '/AiImage3.webp'}
-                    src='/AiImage3.webp'
-                    alt={'ai image 3'}
-                    width={1}
-                    height={1}
-                    unoptimized={true}
-                />
+                <AnimatedImage className={styles.aiRightImage} images={images2} alt='ai image 4' />
+                <AnimatedImage className={styles.aiRightImage} images={images3} alt='ai image 5' />
             </div>
         </div>
     );

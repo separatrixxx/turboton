@@ -9,11 +9,6 @@
 	gap: 40px;
 }
 
-.logoImage {
-	width: 22%;
-	height: fit-content;
-}
-
 .mainText {
 	text-align: center;
 
@@ -31,10 +26,6 @@
 		padding-bottom: 60px;
 	}
 
-	.logoImage {
-		width: 45%;
-	}
-
 	.mainImage {
 		width: 60%;
 	}
@@ -43,10 +34,6 @@
 @media (max-width: 580px) {
 	.mainBlock {
 		padding-bottom: 40px;
-	}
-
-	.logoImage {
-		width: 76%;
 	}
 
 	.mainImage {
