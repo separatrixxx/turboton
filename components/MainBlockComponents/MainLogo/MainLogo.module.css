@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 580px) {
-	.logoDiv {
+	.mainLogo {
 		grid-template-columns: auto;
 		gap: 16px;
 	}

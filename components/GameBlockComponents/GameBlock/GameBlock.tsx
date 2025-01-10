@@ -5,6 +5,7 @@ import { useSetup } from '../../../hooks/useSetup';
 import { TextBlock } from '../../NftBlockComponents/TextBlock/TextBlock';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import { useResizeW } from '../../../hooks/useResize';
 
 
 export const GameBlock = (): JSX.Element => {
@@ -45,8 +46,13 @@ export const GameBlock = (): JSX.Element => {
         };
     }, []);
 
-    const phoneTransform = `translateY(${Math.max(100 - scrollPosition * 60, 0)}px)`;
-    const mascotTransform = `translateY(${Math.max(100 - scrollPosition * 90, 0)}px)`;
+    const width = useResizeW();
+
+    const phoneSpeed = width > 580 ? 60 : 80;;
+    const mascotSpeed = width > 580 ? 100 : 120;
+
+    const phoneTransform = `translateY(${Math.max(100 - scrollPosition * phoneSpeed, 0)}px)`;
+    const mascotTransform = `translateY(${Math.max(100 - scrollPosition * mascotSpeed, 0)}px)`;
 
     return (
         <div className={styles.gameBlock} ref={containerRef}>
