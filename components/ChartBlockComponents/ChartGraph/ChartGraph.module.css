@@ -1,0 +1,16 @@
+.chartGraph {
+	width: 100%;
+	height: 200px !important;
+}
+
+@media (max-width: 1024px) {
+	.chartGraph {
+		height: 220px !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.chartGraph {
+		height: 250px !important;
+	}
+}
