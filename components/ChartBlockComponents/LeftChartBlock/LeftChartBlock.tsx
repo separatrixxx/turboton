@@ -16,7 +16,7 @@ export const LeftChartBlock = (): JSX.Element => {
     
     const checkTextsRef = useRef<HTMLDivElement>(null);
     const featuresTextsRef = useRef<HTMLDivElement>(null);
-    const counterRef = useRef<HTMLBaseElement>(null);
+    const counterRef = useRef<HTMLHeadingElement>(null);
     const [count, setCount] = useState<number>(0);
 
     useEffect(() => {

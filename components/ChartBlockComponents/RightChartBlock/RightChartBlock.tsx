@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import cn from 'classnames';
+import { Chart } from '../Chart/Chart';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -48,6 +49,7 @@ export const RightChartBlock = (): JSX.Element => {
             <Htag tag='s' className={cn(styles.text, styles.text2)}>
                 {setLocale(router.locale).chart_text_2}
             </Htag>
+            <Chart />
         </div>
     );
 };

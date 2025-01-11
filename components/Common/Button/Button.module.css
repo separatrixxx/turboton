@@ -31,13 +31,18 @@
 	background: var(--light);
 }
 
+.chartButton {
+	background: var(--chartBtn);
+}
+
 .iconButton {
-	grid-template-columns: auto 1fr;
+	display: flex;
+	justify-content: center;
 	gap: 10px;
 }
 
 .iconButton > svg {
-	width: 26px;
+	width: 22px;
 	fill: var(--white);
 }
 
