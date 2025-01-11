@@ -65,6 +65,8 @@
 
 	width: fit-content;
 	object-fit: cover;
+
+	transition-duration: 300ms;
 }
 
 .gameImage1 {

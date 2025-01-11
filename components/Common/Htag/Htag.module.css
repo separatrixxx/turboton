@@ -15,11 +15,13 @@
 }
 
 .xxxl {
-	font-size: 80px;
+	font-size: 124px;
+	line-height: 124px;
 }
 
 .xxl {
 	font-size: 50px;
+	line-height: 60px !important;
 }
 
 .xl {
@@ -39,8 +41,14 @@
 }
 
 @media (max-width: 1024px) {
+	.xxxl {
+		font-size: 112px;
+		line-height: 112px;
+	}
+
 	.xxl {
 		font-size: 40px;
+		line-height: 50px !important;
 	}
 
 	.xl {
@@ -63,8 +71,14 @@
 }
 
 @media (max-width: 580px) {
+	.xxxl {
+		font-size: 100px;
+		line-height: 100px;
+	}
+
 	.xxl {
 		font-size: 28px;
+		line-height: 38px !important;
 	}
 
 	.xl {

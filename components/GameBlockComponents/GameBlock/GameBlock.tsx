@@ -77,7 +77,7 @@ export const GameBlock = (): JSX.Element => {
                         width={1}
                         height={1}
                         unoptimized={true}
-                        style={{ transform: phoneTransform, transition: 'transform 0.3s ease-out' }}
+                        style={{ transform: phoneTransform }}
                     />
                     <Image className={styles.gameImage2} draggable='false'
                         loader={() => '/GameImage2.webp'}
@@ -86,7 +86,7 @@ export const GameBlock = (): JSX.Element => {
                         width={1}
                         height={1}
                         unoptimized={true}
-                        style={{ transform: mascotTransform, transition: 'transform 0.3s ease-out' }}
+                        style={{ transform: mascotTransform }}
                     />
                 </div>
             </div>

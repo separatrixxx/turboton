@@ -1,0 +1,35 @@
+.rightChartBlock {
+	display: grid;
+	align-self: start;
+
+	width: 100%;
+	justify-items: right;
+	gap: 36px;
+	grid-area: rightChartBlock;
+}
+
+.title {
+	font-weight: 600;
+}
+
+.text {
+	color: var(--white);
+
+	line-height: 24px;
+}
+
+.text2 {
+	margin-top: -20px;
+}
+
+@media (max-width: 1024px) {
+	.rightChartBlock {
+		gap: 32px;
+	}
+}
+
+@media (max-width: 580px) {
+	.rightChartBlock {
+		gap: 28px;
+	}
+}

@@ -1,0 +1,52 @@
+.chartBlock {
+	display: grid;
+	align-items: start;
+
+	width: 100%;
+	padding: 80px 0;
+
+	background: linear-gradient(to left, #596CF5, #0096FF, #38ACFF);
+	justify-items: center;
+}
+
+.chartDiv {
+	display: grid;
+	align-items: center;
+
+	width: 70%;
+	justify-items: right;
+	gap: 120px;
+	grid-template-columns: 1fr 46%;
+	grid-template-areas: "leftChartBlock rightChartBlock";
+}
+
+@media (max-width: 1400px) {
+	.chartDiv {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.chartBlock {
+		padding: 60px 0;
+	}
+
+	.chartDiv {
+		width: 90%;
+		grid-template-columns: auto;
+		gap: 48px;
+		grid-template-areas:
+			"rightChartBlock"
+			"leftChartBlock";
+	}
+}
+
+@media (max-width: 580px) {
+	.chartBlock {
+		padding: 40px 0;
+	}
+
+	.chartDiv {
+		gap: 32px;
+	}
+}
