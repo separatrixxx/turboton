@@ -220,7 +220,7 @@
 	}
 
 	.gameImage2 {
-		bottom: 20%;
+		bottom: 10%;
 		left: 10%;
 
 		height: 250px;
@@ -247,14 +247,12 @@
 	}
 
 	.gameImage1 {
-		top: -15%;
 		left: -40%;
 
 		width: 200%;
 	}
 
 	.gameImage2 {
-		bottom: 15%;
 		left: 0;
 
 		height: 250px;

@@ -20,8 +20,8 @@ export const NftBlock = (): JSX.Element => {
             <Glow className={styles.glow} />
             <div className={styles.nftDiv}>
                 <div className={styles.tapeDiv}>
-                    <NftTape direction={width > 1024 ? 'top' : 'right'} speed={1} />
-                    <NftTape direction={width > 1024 ? 'bottom' : 'left'} speed={0.5} />
+                    <NftTape direction={width > 1024 ? 'top' : 'right'} speed={0.5} />
+                    <NftTape direction={width > 1024 ? 'bottom' : 'left'} speed={0.3} />
                 </div>
                 <TextBlock className={styles.nftTextBlock}
                     title={setLocale(router.locale).nft_title}
