@@ -1,0 +1,11 @@
+.customTooltip {
+	padding: 10px 12px;
+
+	border-radius: 10px;
+	background-color: var(--white);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+	color: var(--primary);
+}

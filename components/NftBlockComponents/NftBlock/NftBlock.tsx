@@ -17,7 +17,6 @@ export const NftBlock = (): JSX.Element => {
 
     return (
         <div className={styles.nftBlock}>
-            <Glow className={styles.glow} />
             <div className={styles.nftDiv}>
                 <div className={styles.tapeDiv}>
                     <NftTape direction={width > 1024 ? 'top' : 'right'} speed={0.5} />

@@ -34,8 +34,8 @@ export const HeaderWeb = (): JSX.Element => {
                     {setLocale(router.locale).header_links.link3}
                 </Htag>
             </Link>
-            <Button text={setLocale(router.locale).buy_on_stonfi} type='primary'
-                size='s' onClick={() => window.open(link4, '_blank')} />
+            <Button className={styles.headerButton} text={setLocale(router.locale).buy_on_stonfi}
+                type='primary' size='s' onClick={() => window.open(link4, '_blank')} />
         </header>
     );
 };

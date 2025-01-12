@@ -38,4 +38,5 @@ export const en = {
     chart_title: "A Memecoin for People Empowered by AI-Driven Art",
     chart_text_1: "TurboTON memecoin represents a groundbreaking experiment on the TON blockchain, driven by community engagement and a deep belief in the transformative power of AI-generated art. Our project explores how AI art can foster unity, inspire creativity, and bring joy to a diverse community.",
     chart_text_2: "By combining the revolutionary potential of AI with the decentralized ethos of blockchain technology, our memecoin stands as a testament to innovation and collaboration. ",
+    price: "Price $$$ USD",
 };

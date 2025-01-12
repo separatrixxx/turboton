@@ -4,10 +4,10 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 
-export const NftTape = ({ direction, speed = 5 }: NftTapeProps): JSX.Element => {
+export const NftTape = ({ direction, speed }: NftTapeProps): JSX.Element => {
     const animationDuration = 10 / speed;
 
-    const tape = [1, 2, 3, 4, 5, 6, 7, 8];
+    const tape = Array.from({ length: 30 }, (_, i) => i + 1);
 
     return (
         <div className={styles.nftTape}>

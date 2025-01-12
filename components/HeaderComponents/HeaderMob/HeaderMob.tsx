@@ -73,8 +73,8 @@ export const HeaderMob = (): JSX.Element => {
             [styles.openHeader]: isOpen,
         })} ref={headerRef}>
             <Icon className={styles.icon} onClick={() => setIsOpen(!isOpen)} />
-            <Button  text={setLocale(router.locale).buy_on_stonfi} type='primary'
-                size='s' onClick={() => window.open(link4, '_blank')} />
+            <Button className={styles.headerButton} text={setLocale(router.locale).buy_on_stonfi}
+                type='primary' size='s' onClick={() => window.open(link4, '_blank')} />
             <AnimatePresence>
                 {isOpen && (
                     <motion.div className={styles.headerLinks}

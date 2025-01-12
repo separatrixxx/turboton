@@ -10,7 +10,7 @@ export const TextBlock = ({ title, text1, text2, buttonText1, buttonText2, link1
         <div className={cn(styles.textBlock, className, {
             [styles.whiteTextBlock]: isWhite,
         })}>
-            <Htag tag='xl' className={styles.title}>
+            <Htag tag='xxl' className={styles.title}>
                 {title}
             </Htag>
             <Htag tag='m'>

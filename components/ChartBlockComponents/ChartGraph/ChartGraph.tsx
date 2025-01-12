@@ -1,7 +1,7 @@
 import { ChartGraphProps } from './ChartGraph.props';
 import styles from './ChartGraph.module.css';
 import { AreaChart, Area, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { ChartInterface } from '../../../interfaces/chart.interface';
+import { CustomTooltip } from '../CustomTooltip/CustomTooltip';
 
 
 export const ChartGraph = ({ chart }: ChartGraphProps): JSX.Element => {
@@ -11,7 +11,7 @@ export const ChartGraph = ({ chart }: ChartGraphProps): JSX.Element => {
 
     const data = chart.coords.map((item, index) => ({
         price: item.price,
-        day: new Date(Date.now() - (29 - index) * 24 * 60 * 60 * 1000).toLocaleDateString('en-US', { day: 'numeric', month: 'short' }), // Форматируем дату
+        day: new Date(Date.now() - (29 - index) * 24 * 60 * 60 * 1000).toLocaleDateString('en-US', { day: 'numeric', month: 'short' }),
     }));
 
     return (
@@ -30,7 +30,7 @@ export const ChartGraph = ({ chart }: ChartGraphProps): JSX.Element => {
                     interval={4}
                     padding={{ left: 10, right: 10 }}
                 />
-                <Tooltip formatter={(value: number) => `${value.toFixed(4)} USD`} />
+                <Tooltip content={<CustomTooltip />}  />
                 <Area type="monotone" dataKey="price" stroke="var(--chartBar)"
                     fill="url(#chartColor)" strokeWidth={2}
                     activeDot={{

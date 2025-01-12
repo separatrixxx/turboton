@@ -6,19 +6,8 @@
 
 	width: 100%;
 
-	background: var(--light);
+	background: linear-gradient(45deg, #F0F0F0 0%, #F0F0F0 20%, #84D2F7 100%);
 	justify-items: center;
-}
-
-.glow {
-	position: absolute;
-	z-index: 0;
-	right: -26%;
-	bottom: 0;
-
-	height: 110%;
-	filter: blur(70px);
-	fill: var(--glow1);
 }
 
 .nftDiv {
@@ -51,16 +40,6 @@
 	.nftDiv {
 		width: 80%;
 	}
-
-	.glow {
-		right: -50%;
-	}
-}
-
-@media (max-width: 1240px) {
-	.glow {
-		right: -70%;
-	}
 }
 
 @media (max-width: 1024px) {
@@ -81,28 +60,12 @@
 		padding: 0;
 	}
 
-	.glow {
-		bottom: -120%;
-		left: -50%;
-
-		transform: rotate(-45deg) translateX(50%);
-	}
-
 	.tapeDiv {
 		grid-template-columns: auto;
 
 		height: 248px;
 		gap: 20px;
 		margin-bottom: -10px;
-	}
-}
-
-@media (max-width: 800px) {
-	.glow {
-		bottom: -120%;
-		left: -100%;
-
-		transform: rotate(-45deg) translateX(50%);
 	}
 }
 
@@ -113,13 +76,6 @@
 
 	.nftDiv {
 		gap: 0;
-	}
-
-	.glow {
-		bottom: -140%;
-		left: -160%;
-
-		transform: rotate(-45deg) translateX(50%);
 	}
 
 	.tapeDiv {
