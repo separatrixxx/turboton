@@ -76,7 +76,7 @@ export const HeaderMob = (): JSX.Element => {
             <Button className={styles.headerButton} text={setLocale(router.locale).buy_on_stonfi}
                 type='primary' size='s' onClick={() => window.open(link4, '_blank')} />
             <AnimatePresence>
-                {isOpen && (
+                {isOpen &&
                     <motion.div className={styles.headerLinks}
                         initial="hidden"
                         animate="visible"
@@ -102,7 +102,7 @@ export const HeaderMob = (): JSX.Element => {
                             </Htag>
                         </Link>
                     </motion.div>
-                )}
+                }
             </AnimatePresence>
         </header>
     );
