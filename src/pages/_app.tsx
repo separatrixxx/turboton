@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { setLocale } from '../../helpers/locale.helper';
-import { Provider } from 'react-redux';
 
 
 export default function App({ Component, pageProps }: AppProps) {
