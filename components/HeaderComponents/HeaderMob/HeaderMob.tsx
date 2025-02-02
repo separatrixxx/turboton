@@ -13,6 +13,7 @@ import cn from 'classnames';
 
 export const HeaderMob = (): JSX.Element => {
     const { router } = useSetup();
+    
     const headerRef = useRef<HTMLDivElement>(null);
 
     const link1 = process.env.NEXT_PUBLIC_TT_MEMECOIN;
